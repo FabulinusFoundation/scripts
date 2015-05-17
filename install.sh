@@ -2,8 +2,8 @@
 # Right directory?
 echo -n "Are you in the directory of the external harddrive? [y|n] "
 read res
-if [[ $res =~ ^[Nn]$ ]] then
-	exit
+if [[ $res =~ ^[Nn]$ ]]; then
+	exit 1
 fi
 
 # Install Node.js
@@ -14,3 +14,5 @@ npm install pm2 -g &&
 # Clone ka-lite and index-server
 git clone https://github.com/learningequality/ka-lite.git &&
 git clone https://github.com/FabulinusFoundation/fabulinus-index-server.git &&
+
+exit

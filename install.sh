@@ -15,4 +15,9 @@ npm install pm2 -g &&
 git clone https://github.com/learningequality/ka-lite.git &&
 git clone https://github.com/FabulinusFoundation/fabulinus-index-server.git &&
 
+# Install and start index server
+cd fabulinus-index-server &&
+sudo npm install &&
+npm start server.js
+
 exit

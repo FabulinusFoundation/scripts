@@ -8,7 +8,7 @@ fi
 
 # Install Node.js
 curl -sLS https://apt.adafruit.com/add | sudo bash &&
-sudo apt-get install node npm &&
+sudo apt-get install -y node npm &&
 npm install pm2 -g &&
 
 # Clone ka-lite and index-server
